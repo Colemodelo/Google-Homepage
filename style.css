@@ -1,0 +1,126 @@
+/* Reset. still have much to learn. setting most things to a value of zero*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    box-sizing: border-box;
+    color: #222;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    min-height: 500px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+}
+ul, li {
+    font-size: 13px;
+    list-style-type: none;
+    padding: 8px;
+}
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #222;
+    cursor: pointer;
+}
+#nav-right ul, #nav-left ul, #footer-left ul, #footer-right ul {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+#nav-right, #nav-left, #footer-left, #footer-right {
+        margin: auto 10px;
+}
+#apps {
+    display: flex;
+    height: 15px;
+    width: 15px;
+}
+.sign-in {
+    outline:none;
+    cursor: pointer;
+    color: #fff;
+    background: #4285F4;
+    padding: 9px 13px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+}
+#logo {
+    display: block;
+    margin: 50px auto 20px;
+}
+input {
+    background: url("https://previews.123rf.com/images/nabiev7art/nabiev7art1907/nabiev7art190700316/127289333-simple-vector-magnifier-icon-concept-element-for-search-bar-magnifying-glass-icon-for-search-bar-.jpg");
+    background-position: 13px 50%;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    outline: none;
+    color: #222;
+    font-size: 16px;
+    font-weight: 50;
+    font-family: arial, sans-serif;
+    margin: auto;
+    margin-top: 30px;
+}
+#searchbar {
+    display: block;
+    border: 1px solid #dfe1e5;
+    padding: 0 40px;
+    border: 1px 1px #888;
+    border-radius: 25px;
+    height: 45px;
+    width: 475px;
+}
+#searchbar:hover {
+    box-shadow: 3px 3px 3px #dfe1e5;
+}
+.btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.btns:hover {
+    border: 1px 1px #222;
+}
+.srchbtns {
+    border: none;
+    cursor: pointer;
+    color:#444;
+    font-size: 15px;
+    font-weight: 350;
+    padding: 10px 25px;
+    outline: none;
+}
+.srchbtns:hover {
+    border: 1px solid #dfe1e5;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    ;
+}
+footer {
+/*I didn't want to fix the position; however, I am having difficulty getting the footer to "stick" to
+the bottom without following the user as they scroll on the page. I have tried using the absolute tag
+which works; however, when the window is smaller the footer sits v. awkwardly */  
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-top: 2px solid #dfe1e5;
+}
+
