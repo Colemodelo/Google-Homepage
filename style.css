@@ -97,6 +97,7 @@ input {
     border: none;
     cursor: pointer;
     color:#444;
+    background: transparent;
     font-size: 15px;
     font-weight: 350;
     padding: 10px 25px;
